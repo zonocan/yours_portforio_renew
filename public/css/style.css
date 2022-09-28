@@ -268,12 +268,12 @@ body {}
 }
 
 .about_h1 {
-  margin: -15px 0 0 10%;
+  margin: -15px 0 0 12%;
 }
 
 .about_outer {
   width: 50%;
-  margin:30px 0 0 10%;
+  margin:30px 0 0 12%;
 }
 
 .about_explains_outer {
@@ -296,7 +296,7 @@ body {}
   height: 40px;
   width: 25%;
   display: flex;
-  margin: 45px 0 0 10%;
+  margin: 45px 0 0 12%;
   background-color: #111111;
   color: #fff;
   border-radius: 0px;
@@ -435,12 +435,12 @@ body {}
 }
 
 .review_h1 {
-  margin: 70px 0 0 10%;
+  margin: 70px 0 0 12%;
 }
 
 .review_outer {
   width: 50%;
-  margin: 40px 0 0 10%
+  margin: 40px 0 0 12%
 }
 
 .review_explains_outer {
@@ -454,7 +454,7 @@ body {}
 
 .review_btn_area {
   display: flex;
-  margin: 71px 0 100px 10%;
+  margin: 71px 0 100px 12%;
 }
 
 .review_btn {
