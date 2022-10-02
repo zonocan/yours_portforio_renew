@@ -14,11 +14,15 @@
   <!-- -->
   <link rel="stylesheet" type="text/css" href="public/css/style.css">
   <link rel="stylesheet" type="text/css" href="public/css/slider.css">
+  <link rel="stylesheet" type="text/css" href="public/css/inview.css">
   <!-- 写真のスライドのjs -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!-- inview -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
   <!-- -->
   <script type="text/javascript" src="public/js/slick.js"></script>
+  <script type="text/javascript" src="public/js/inview.js"></script>
 </head>
 
 <body>
@@ -56,7 +60,7 @@
       </div>
   </header>
   <div class="container-fluid p-0">
-      <div class="top_page slider-area row p-0">
+      <div class="top_page slider-area row p-0 inview_re fadeIn_up">
           <div class="cacth_flase">
               <p class="cacth_flase_1">Design Your</p>
               <p class="cacth_flase_2">SPECIAL</p>
@@ -87,7 +91,8 @@
               <img src="public/btn_arrow/scroll_bar_arrow.png" class="scroll_bar_arrow">
           </div>
       </div>
-      <div class="block about row p-0">
+      <!-- -->
+      <div class="block about row p-0 inview_re fadeIn_up">
           <div class="background-left about_background_left p-0">
               <p class="h1 about_h1">ABOUT</p>
               <!-- -->
@@ -120,7 +125,7 @@
           <div class="background-right about_background_right d-none d-md-block"></div>
       </div>
       <!-- serviceのPC画面 -->
-      <div class="block servise row m-0 d-none d-md-block">
+      <div class="block servise row m-0 d-none d-md-block inview_re fadeIn_up">
           <p class="service_h1">SERVISE</p>
           <div class="col-12 service_content p-0">
               <button class="service_flame">
@@ -199,7 +204,7 @@
       </div>
       <!-- -->
       <!-- serviceのスマホ画面 -->
-      <div class="phone_block phone_service row d-md-none d-block m-0">
+      <div class="phone_block phone_service row d-md-none d-block m-0 inview_re fadeIn_up">
         <p class="service_h1">SERVISE</p>
           <div class="col-12 service_content_top p-0">
             <button class="phone_service_flame btn">
@@ -279,7 +284,7 @@
           </div>
       </div>
       <!-- -->
-      <div class="block review row p-0">
+      <div class="block review row p-0 inview_re fadeIn_up">
           <div class="background-left review_background_left p-0">
               <p class="h1 review_h1">REVIEW</p>
               <!-- スマホ画面時のメイン画像 -->
@@ -564,6 +569,7 @@
       </div>
     </div>
   </footer>
+  <!-- -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 

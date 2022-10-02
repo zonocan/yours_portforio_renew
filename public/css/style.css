@@ -63,6 +63,9 @@ body {}
   width: 100%;
   height: 50px;
   display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
 }
 
 .logo_area {
@@ -119,7 +122,7 @@ body {}
   max-height: 600px;
   background-color: #111111;
   position: relative;
-  margin: 0;
+  margin: 50px 0 0 0;
 }
 
 .cacth_flase {
@@ -313,9 +316,9 @@ body {}
 }
 
 .about_background_right {
-  height: 625px;
+  height: 880px;
   position: absolute;
-  top: 1140px;
+  top: 114px;
   left: 50%;
   z-index: -1;
 }
@@ -329,7 +332,7 @@ body {}
   background-color: #111111;
   width: 100%;
   z-index: 2;
-	padding-bottom: 50px;
+	padding: 25px 0 50px 0;
 }
 
 .service_h1 {
@@ -687,7 +690,7 @@ body {}
   max-height: 500px;
   background-color: #111111;
   position: relative;
-  margin: 0;
+  margin: 50px 0 0 0;
 }
 
 .cacth_flase {
@@ -714,7 +717,7 @@ body {}
 }
 
 .top_page_btn {
-  width: 50%;
+  width: 64%;
   font-size: 10px;
   margin-top: -15px;
 }
@@ -766,7 +769,7 @@ body {}
 
 .about_apply_btn{
   width: 35%;
-  margin: 50px 15% 0px 15%;
+  margin: 35px 15% 0px 15%;
 }
 
 /**/
@@ -814,18 +817,18 @@ body {}
 }
 
 .shirts_service {
-  width: 85%;
+  width: 100%;
   margin: 5px auto;
 }
 
 .bottoms_service {
   width: 100%;
-  margin: 5px auto;
+  margin: 5px 0 5px -12%;
 }
 
 .accesary_service {
   width: 100%;
-  margin: 5px auto;
+  margin: 5px 0 5px -20%;
 }
 
 .phone_service_flame {
@@ -926,13 +929,13 @@ body {}
 }
 
 .site_map {
-  width: 45%;
+  width: 55%;
   display: flex;
   margin-left: -5%;
 }
 
 .site_map_nav_link_top {
-  margin-left: -17%;
+  width: 100%;
 }
 
 .relastion_site {
@@ -945,16 +948,22 @@ body {}
 }
 
 .infomastion_nav_links {
+  width: 130%;
   margin-left: -5%;
 }
 
 .SNS {
   width: 55%;
+  margin-left: 15%;
 }
 
 .SNS_nav_links {
-  width: 80%;
+  width: 110%;
   display: flex;
+}
+
+.SNS_nav_link a{
+  width: 20%;
 }
 
 
