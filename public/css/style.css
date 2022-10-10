@@ -71,13 +71,35 @@ body {}
 .logo_area {
   background-color: #fff;
   border-top: 4px #111111 solid;
+  display: flex;
 }
 
 #header_logo {
-  margin: 8px 0 0 10%;
+  margin: 3px 0 3px 10%;
+  width: 20%;
 }
 
-.nav_link_area {
+.SNS_block {
+  width: 25%;
+  height: 50px;
+  margin: -7px 0 0 7%;
+
+}
+
+.SNS_nav_link {
+  height: 43px;
+  border: 1px #f6f7f7 solid;
+}
+
+.header_sns_link {
+  text-align: center;
+}
+
+.header_sns_link i {
+  font-size: 20px;
+}
+
+.header_link_area {
   background-color: #111111;
   width: 50%;
   display: flex;
@@ -139,8 +161,8 @@ body {}
 
 .cacth_flase_1 {
   font-family: DIN Condensed;
-  font-size: 68px;
-  line-height: 45px;
+  font-size: 80px;
+  line-height: 50px;
   letter-spacing: 5px;
   padding:0;
   margin:0;
@@ -148,7 +170,7 @@ body {}
 
 .cacth_flase_2 {
   font-family: DIN Condensed;
-  font-size: 85px;
+  font-size: 95px;
   letter-spacing: 3px;
   padding:0;
   margin:0;
@@ -158,7 +180,7 @@ body {}
   font-family: Osaka;
   font-size: 12px;
   letter-spacing: 1px;
-  margin: 30px 0 35px 0;
+  margin: 35px 0 40px 0;
 }
 
 .top_page_btn {
