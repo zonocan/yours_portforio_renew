@@ -83,12 +83,17 @@ body {}
   width: 25%;
   height: 50px;
   margin: -7px 0 0 7%;
-
 }
 
-.SNS_nav_link {
+.header_SNS_nav_links {
+  margin: 8px 0 0 0;
+}
+
+.header_SNS_nav_link {
   height: 43px;
   border: 1px #f6f7f7 solid;
+  margin: 0;
+  padding: 0:
 }
 
 .header_sns_link {
@@ -979,6 +984,10 @@ body {}
     display: flex;
   }
 
+  .SNS_nav_link {
+
+  }
+
   .SNS_nav_link a{
     width: 20%;
   }
@@ -995,8 +1004,22 @@ body {}
 }
 
 #header_logo {
-  margin: 14px 0 0 10%;
+  margin: 10px 0 0 10%;
   width: 30%;
+}
+
+.SNS_block {
+  width: 40%;
+  display: flex;
+  margin: -7px 0 0 7%;
+}
+
+.header_SNS_nav_link {
+  display: none;
+}
+
+.header_sns_link {
+  text-align: center;
 }
 
 .header_nav_links {
@@ -1320,12 +1343,16 @@ body {}
 }
 
 .SNS_nav_links {
-  width: 110%;
+  width: 88%;
   display: flex;
 }
 
+.SNS_nav_link {
+  width: 28%:
+}
+
 .SNS_nav_link a{
-  width: 20%;
+  width: 28%;
 }
 
 
