@@ -23,6 +23,7 @@
   <!-- -->
   <script type="text/javascript" src="public/js/slick.js"></script>
   <script type="text/javascript" src="public/js/inview.js"></script>
+  <script type="text/javascript" src="public/js/index.js"></script>
 </head>
 
 <body>
@@ -68,9 +69,9 @@
               </li>
             <!-- ヘッダーのナビリンク-->
           </ul>
-          <button class="header_apply_btn btn contribute">
-              <a>APPLY</a>
-              <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow">
+          <button class="header_apply_btn btn contribute" id="header_apply_btn_id">
+              <a><span>APPLY</span></a>
+              <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow" id="header_btn_arrow_id">
           </button>
           <!-- スマホ画面時のバーガーメニュー　-->
           <div class="d-md-none d-block">
@@ -87,9 +88,9 @@
               <p class="cacth_flase_2">SPECIAL</p>
               <p class="cacth_flase_1 ">With Us</p>
               <p class="small_cacth_flase">あなただけの一着を共に</p>
-              <button class="top_page_btn btn contribute">
-                  <a>APPLY</a>
-                  <img src="public/btn_arrow/main_btn_arrow.png" class="top_page_btn_arrow">
+              <button class="top_page_btn btn contribute" id="top_apply_btn">
+                  <a><span>APPLY</span></a>
+                  <img src="public/btn_arrow/main_btn_arrow.png" class="top_page_btn_arrow" id="top_page_btn_arrow_id">
               </button>
           </div>
           <ul class="slider" id="slider_img_lists">
@@ -137,9 +138,9 @@
                       <p class="about_explain">その上で、あなたが表現したいものを一緒に見つけましょう！！</p>
                   </div>
               </div>
-              <button class="about_apply_btn btn contribute">
-                  <a>APPLY</a>
-                  <img src="public/btn_arrow/main_btn_arrow.png" class="about_main_btn_arrow">
+              <button class="about_apply_btn btn contribute" id="about_apply_btn_id">
+                  <a><span>APPLY</span></a>
+                  <img src="public/btn_arrow/main_btn_arrow.png" class="about_main_btn_arrow" id="about_main_btn_arrow_id">
               </button>
           </div>
           <div class="about_main_img">
@@ -358,13 +359,13 @@
                   </div>
               </div>
               <div class="review_btn_area">
-                  <button class="btn review_apply_btn review_btn">
-                      <a>APPLY</a>
-                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow">
+                  <button class="btn review_apply_btn review_btn" id="review_apply_btn_id">
+                      <a><span>APPLY</span></a>
+                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_apply_btn_arrow_id">
                   </button>
-                  <button class="btn review_view_more_btn review_btn">
-                      <a>MORE</a>
-                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow">
+                  <button class="btn review_view_more_btn review_btn" id="review_view_more_btn_id">
+                      <a><span>MORE</span></a>
+                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_more_btn_arrow_id">
                   </button>
               </div>
           </div>
