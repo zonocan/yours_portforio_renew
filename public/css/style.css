@@ -1295,7 +1295,7 @@ body {}
 }
 
 #header_logo {
-  margin: 5px 0 0 10%;
+  margin: 5.5px 0 0 10%;
   width: 40%;
 }
 
@@ -1317,14 +1317,9 @@ body {}
   display: none;
 }
 
-.humberger_menu {
-  color: #fff;
-  margin-top: 11px;
-}
-
 .header_apply_btn {
   height: 30px;
-  margin: 11px 2% 0 35%;
+  margin: 11px 2% 0 30%;
 }
 
 .header_apply_btn a {
@@ -1335,6 +1330,103 @@ body {}
 .header_btn_arrow {
   margin-top: 3.5px;
 }
+
+/* 11月13日追加 ハンバーガーメニュー ハンバーガーバー */
+
+.humberger_menu {
+  border: none
+}
+
+.humberger_menu span {
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+  transition: ease .4s; /*ハンバーガーメニュークリック時の三本線の動きを遅延*/
+  display: block;
+  z-index: 2;
+}
+
+.humberger_menu span:nth-child(1) {
+  top: 0;
+}
+
+.humberger_menu span:nth-child(2) {
+  margin: 5px 0;
+}
+
+.humberger_menu span:nth-child(3) {
+  top: 0;
+}
+
+/*
+.humberger_menu.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.humberger_menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.humberger_menu.active span:nth-child(3) {
+  top: -7px;
+  transform: rotate(-45deg);
+}
+*/
+
+.humberger_nav {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  width: 50%;
+  top: 50;
+  left: 50%;
+  background-color: #111111;
+  opacity: 80%;
+  padding: 30px 5% 30px 5%;
+}
+
+.humberger_nav.active {
+  transform: translateX(100%);
+  transition: ease .4s;
+}
+
+.humberger_SNS {
+  width: 40%;
+  margin-right: 25%;
+}
+
+.h2 {
+  width: 100%;
+  color: #fff;
+  font-family: Osaka;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.humberger_SNS_link {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 5px;
+  width: 40%;
+}
+
+.humberger_SNS_link a {
+  display: flex;
+}
+
+.humberger_sns_link {
+  margin-left: 10%;
+}
+
+.humberger_sitemap_link {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 2.5px;
+}
+
+/* 11月13日追加 ハンバーガーメニュー */
 
 /* top */
 
@@ -1370,9 +1462,9 @@ body {}
 }
 
 .top_page_btn {
-  width: 53%;
+  width: 60%;
   font-size: 10px;
-  margin-top: -15px;
+  margin-top: -23px;
 }
 
 .top_page_btn a {
@@ -1422,8 +1514,8 @@ body {}
 }
 
 .about_apply_btn{
-  width: 30%;
-  margin: 35px 15% 0px 15%;
+  width: 35%;
+  margin: 40px 15% 0px 15%;
 }
 
 .about_apply_btn a {
@@ -1464,29 +1556,33 @@ body {}
   margin: 25px auto;
 }
 
+.servise_name {
+  font-size: 20px;
+}
+
 .servise_info {
-  width: 35%;
+  width: 50%;
   margin: 5 auto;
 }
 
 .jucket_service {
-  width: 100%;
+  width: 75%;
   margin: 5px auto;
 }
 
 .shirts_service {
-  width: 100%;
+  width: 72%;
   margin: 5px auto;
 }
 
 .bottoms_service {
   width: 100%;
-  margin: 5px 0 5px -12%;
+  margin: 5px auto;
 }
 
 .accesary_service {
   width: 100%;
-  margin: 5px 0 5px -20%;
+  margin: 5px auto;
 }
 
 .phone_service_flame {
@@ -1547,9 +1643,9 @@ body {}
 }
 
 .review_main_img_area_btn {
-  width: 90%;
+  width: 100%;
   font-size: 10px;
-  margin: 5px 0 0 -1%;
+  margin: 5px 0 0 -3%;
   z-index: 10;
 }
 
@@ -1565,11 +1661,11 @@ body {}
 }
 
 .review_apply_btn {
-  width: 35%;
+  width: 40%;
 }
 
 .review_view_more_btn {
-  width: 35%;
+  width: 40%;
 }
 
 .review_apply_btn a {
@@ -1642,7 +1738,7 @@ body {}
 }
 
 .SNS_nav_links {
-  width: 88%;
+  width: 104%;
   display: flex;
 }
 

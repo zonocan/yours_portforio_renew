@@ -9,10 +9,16 @@ $(function(){
     }
   );
 
+  //humberger_menuの実装
+  $('#humberger_menu_id').on('click',function(){
+    $('#humberger_menu_id').toggleClass('active');
+    $('#humberger_nav_id').toggleClass('active');
+  });
+
   //topページのボタン
   $('#top_apply_btn').hover(
     function() {
-      $('#top_page_btn_arrow_id').fadeOut(function(){
+      $('.humberger_nav').fadeOut(function(){
         $(this).fadeToggle();
       });
     }
