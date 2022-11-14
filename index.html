@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
   <!-- 写真のスライドのcss -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -28,613 +29,613 @@
 
 <body>
   <header class="header">
-      <div class="logo_area col-6">
-          <img src="public/logo/logo.png" id="header_logo">
-          <!-- 10月10日追加 SNSリンク-->
-          <div class="header_nav_link_area SNS_block p-0">
-              <ul class="nav_link_area nav header_SNS_nav_links">
-                  <li class="header_SNS_nav_link nav_item active m-0 p-0">
-                      <a class="nav-link header_sns_link" href="">
-                          <i class="fa-brands fa-instagram" style="color:#111111"></i>
-                      </a>
-                  </li>
-                  <li class="header_SNS_nav_link nav_item active m-0">
-                      <a class="nav-link header_sns_link" href="">
-                          <i class="fa-brands fa-square-facebook" style="color:#111111"></i>
-                      </a>
-                  </li>
-                  <li class="header_SNS_nav_link nav_item active m-0">
-                      <a class="nav-link header_sns_link" href="">
-                          <i class="fa-brands fa-twitter" style="color:#111111"></i>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-          <!-- 10月10日追加 SNSリンク-->
+    <div class="logo_area col-6">
+      <img src="public/logo/logo.png" id="header_logo">
+      <!-- 10月10日追加 SNSリンク-->
+      <div class="header_nav_link_area SNS_block p-0">
+        <ul class="nav_link_area nav header_SNS_nav_links">
+          <li class="header_SNS_nav_link nav_item active m-0 p-0">
+            <a class="nav-link header_sns_link" href="">
+              <i class="fa-brands fa-instagram" style="color:#111111"></i>
+            </a>
+          </li>
+          <li class="header_SNS_nav_link nav_item active m-0">
+            <a class="nav-link header_sns_link" href="">
+              <i class="fa-brands fa-square-facebook" style="color:#111111"></i>
+            </a>
+          </li>
+          <li class="header_SNS_nav_link nav_item active m-0">
+            <a class="nav-link header_sns_link" href="">
+              <i class="fa-brands fa-twitter" style="color:#111111"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="nav_link_area header_link_area">
-          <ul class="header_nav_links navbar nav">
-            <!-- ヘッダーのナビリンク PC 画面-->
-              <li class="header_nav_link nav-item active">
-                  <a class="nav-link" href="#">TOP</a>
+      <!-- 10月10日追加 SNSリンク-->
+    </div>
+    <div class="nav_link_area header_link_area">
+      <ul class="header_nav_links navbar nav">
+        <!-- ヘッダーのナビリンク PC 画面-->
+        <li class="header_nav_link nav-item active">
+          <a class="nav-link" href="#">TOP</a>
+        </li>
+        <li class="header_nav_link nav-item active">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="header_nav_link nav-item active">
+          <a class="nav-link" href="#">SERVISE</a>
+        </li>
+        <li class="header_nav_link nav-item active">
+          <a class="nav-link" href="#">REVIEW</a>
+        </li>
+        <!-- ヘッダーのナビリンク-->
+      </ul>
+      <button class="header_apply_btn btn contribute" id="header_apply_btn_id">
+        <a><span>APPLY</span></a>
+        <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow" id="header_btn_arrow_id">
+      </button>
+      <!-- スマホ画面時のバーガーメニュー　-->
+      <div class="d-md-none d-block">
+        <button class="humberger_menu active btn d-md-none d-block" id="humberger_menu_id">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- 11月13日追加 ハンバーガーメニュ　-->
+        <div class="humberger_nav active" id="humberger_nav_id">
+          <div class="humberger_SNS">
+            <p class="h3">公式SNS</p>
+            <ul class="humberger_SNS_links">
+              <li class="humberger_SNS_link">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <p class="humberger_sns_link">instagram</p>
+                </a>
               </li>
-              <li class="header_nav_link nav-item active">
-                  <a class="nav-link" href="#">ABOUT</a>
+              <li class="humberger_SNS_link">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <p class="humberger_sns_link">facebook</p>
+                </a>
               </li>
-              <li class="header_nav_link nav-item active">
-                  <a class="nav-link" href="#">SERVISE</a>
+              <li class="humberger_SNS_link">
+                <a class="nav-link" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p class="humberger_sns_link">twitter</p>
+                </a>
               </li>
-              <li class="header_nav_link nav-item active">
-                  <a class="nav-link" href="#">REVIEW</a>
-              </li>
-            <!-- ヘッダーのナビリンク-->
-          </ul>
-          <button class="header_apply_btn btn contribute" id="header_apply_btn_id">
-              <a><span>APPLY</span></a>
-              <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow" id="header_btn_arrow_id">
-          </button>
-          <!-- スマホ画面時のバーガーメニュー　-->
-          <div class="d-md-none d-block">
-              <button class="humberger_menu active btn d-md-none d-block" id="humberger_menu_id">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-              <!-- 11月13日追加 ハンバーガーメニュ　-->
-              <div class="humberger_nav active" id="humberger_nav_id">
-                  <div class="humberger_SNS">
-                      <p class="h2">公式SNS</p>
-                      <ul class="humberger_SNS_links">
-                          <li class="humberger_SNS_link">
-                            <a class="nav-link" href="#">
-                              <i class="fa-brands fa-instagram"></i>
-                              <p class="humberger_sns_link">instagram</p>
-                            </a>
-                          </li>
-                          <li class="humberger_SNS_link">
-                            <a class="nav-link" href="#">
-                              <i class="fa-brands fa-square-facebook"></i>
-                              <p class="humberger_sns_link">facebook</p>
-                            </a>
-                          </li>
-                          <li class="humberger_SNS_link">
-                            <a class="nav-link" href="#">
-                              <i class="fa-brands fa-twitter"></i>
-                              <p class="humberger_sns_link">twitter</p>
-                            </a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="humberger_sitemap">
-                      <p class="h2">SITE MAP</p>
-                      <ul class="humberger_sitemap_links">
-                          <li class="humberger_sitemap_link">
-                              <a class="nav-link">TOP</a>
-                          </li>
-                          <li class="humberger_sitemap_link">
-                              <a class="nav-link">ABOUT</a>
-                          </li>
-                          <li class="humberger_sitemap_link">
-                              <a class="nav-link">SERVICE</a>
-                          </li>
-                          <li class="humberger_sitemap_link">
-                              <a class="nav-link">REVIEW</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- 11月13日追加 ハンバーガーメニュ　-->
+            </ul>
           </div>
+          <div class="humberger_sitemap">
+            <p class="h3">SITE MAP</p>
+            <ul class="humberger_sitemap_links">
+              <li class="humberger_sitemap_link">
+                <a class="nav-link">TOP</a>
+              </li>
+              <li class="humberger_sitemap_link">
+                <a class="nav-link">ABOUT</a>
+              </li>
+              <li class="humberger_sitemap_link">
+                <a class="nav-link">SERVICE</a>
+              </li>
+              <li class="humberger_sitemap_link">
+                <a class="nav-link">REVIEW</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 11月13日追加 ハンバーガーメニュ　-->
       </div>
+    </div>
   </header>
   <div class="container-fluid p-0">
-      <div class="top_page slider-area row p-0 inview_re fadeIn_up">
-          <div class="cacth_flase">
-              <p class="cacth_flase_1">Design Your</p>
-              <p class="cacth_flase_2">SPECIAL</p>
-              <p class="cacth_flase_1 ">With Us</p>
-              <p class="small_cacth_flase">あなただけの一着を共に</p>
-              <button class="top_page_btn btn contribute" id="top_apply_btn">
-                  <a><span>APPLY</span></a>
-                  <img src="public/btn_arrow/main_btn_arrow.png" class="top_page_btn_arrow" id="top_page_btn_arrow_id">
-              </button>
-          </div>
-          <ul class="slider" id="slider_img_lists">
-              <li class="slider_img_list">
-                  <img src="public/top_slider_img/slider_img_1.png" class="slider_imgs">
-              </li>
-              <li class="slider_img_list">
-                  <img src="public/top_slider_img/slider_img_2.png" class="slider_imgs">
-              </li>
-              <li class="slider_img_list">
-                  <img src="public/top_slider_img/slider_img_3.png" class="slider_imgs">
-              </li>
-              <li class="slider_img_list">
-                  <img src="public/top_slider_img/slider_img_4.png" class="slider_imgs">
-              </li>
-          </ul>
-          <!-- 10/08 非表示
+    <div class="top_page slider-area row p-0 inview_re fadeIn_up">
+      <div class="cacth_flase">
+        <p class="cacth_flase_1">Design Your</p>
+        <p class="cacth_flase_2">SPECIAL</p>
+        <p class="cacth_flase_1 ">With Us</p>
+        <p class="small_cacth_flase">あなただけの一着を共に</p>
+        <button class="top_page_btn btn contribute" id="top_apply_btn">
+          <a><span>APPLY</span></a>
+          <img src="public/btn_arrow/main_btn_arrow.png" class="top_page_btn_arrow" id="top_page_btn_arrow_id">
+        </button>
+      </div>
+      <ul class="slider" id="slider_img_lists">
+        <li class="slider_img_list">
+          <img src="public/top_slider_img/slider_img_1.png" class="slider_imgs">
+        </li>
+        <li class="slider_img_list">
+          <img src="public/top_slider_img/slider_img_2.png" class="slider_imgs">
+        </li>
+        <li class="slider_img_list">
+          <img src="public/top_slider_img/slider_img_3.png" class="slider_imgs">
+        </li>
+        <li class="slider_img_list">
+          <img src="public/top_slider_img/slider_img_4.png" class="slider_imgs">
+        </li>
+      </ul>
+      <!-- 10/08 非表示
             <p class="top_background_p">It's Your's</p>
           -->
-          <div class="scroll_bar">
-              <p>scroll</p>
-              <img src="public/btn_arrow/scroll_bar_arrow.png" class="scroll_bar_arrow">
-          </div>
+      <div class="scroll_bar">
+        <p>scroll</p>
+        <img src="public/btn_arrow/scroll_bar_arrow.png" class="scroll_bar_arrow">
       </div>
-      <!-- -->
-      <div class="block about row p-0 inview_re fadeIn_up">
-          <div class="background-left about_background_left p-0">
-              <p class="h1 about_h1">ABOUT</p>
-              <!-- -->
-              <div class="about_phone_main_img d-md-none d-block">
-                  <img src="public/phone_main_img/about_img.png">
-              </div>
-              <!-- -->
-              <div class="about_outer">
-                  <div class="h2_outer">
-                      <p class="h2">あなたらしさとは？</p>
-                      <p class="h2">それを一緒に考えましょう！！</p>
-                  </div>
-                  <div class="about_explains_outer">
-                      <p class="about_explain">我々は従来のオーダーメイドではありません。</p>
-                      <p class="about_explain">あなただけのオリジナルファッションを生み出すプロ集団です。</p>
-                      <p class="about_explain">どういうことかというと、あなたが着たい1着を現役の</p>
-                      <p class="about_explain">ファッションデザイナーがジャンルを問わず1からデザインします。</p>
-                      <p class="about_explain">デザインや素材などは我々プロにお任せ下さい。</p>
-                      <p class="about_explain">その上で、あなたが表現したいものを一緒に見つけましょう！！</p>
-                  </div>
-              </div>
-              <button class="about_apply_btn btn contribute" id="about_apply_btn_id">
-                  <a><span>APPLY</span></a>
-                  <img src="public/btn_arrow/main_btn_arrow.png" class="about_main_btn_arrow" id="about_main_btn_arrow_id">
-              </button>
+    </div>
+    <!-- -->
+    <div class="block about row p-0 inview_re fadeIn_up">
+      <div class="background-left about_background_left p-0">
+        <p class="h1 about_h1">ABOUT</p>
+        <!-- -->
+        <div class="about_phone_main_img d-md-none d-block">
+          <img src="public/phone_main_img/about_img.png">
+        </div>
+        <!-- -->
+        <div class="about_outer">
+          <div class="h2_outer">
+            <p class="h2">あなたらしさとは？</p>
+            <p class="h2">それを一緒に考えましょう！！</p>
           </div>
-          <div class="about_main_img">
-              <img src="public/display_img/display_img_1.png">
+          <div class="about_explains_outer">
+            <p class="about_explain">我々は従来のオーダーメイドではありません。</p>
+            <p class="about_explain">あなただけのオリジナルファッションを生み出すプロ集団です。</p>
+            <p class="about_explain">どういうことかというと、あなたが着たい1着を現役の</p>
+            <p class="about_explain">ファッションデザイナーがジャンルを問わず1からデザインします。</p>
+            <p class="about_explain">デザインや素材などは我々プロにお任せ下さい。</p>
+            <p class="about_explain">その上で、あなたが表現したいものを一緒に見つけましょう！！</p>
           </div>
-          <div class="background-right about_background_right d-none d-md-block"></div>
+        </div>
+        <button class="about_apply_btn btn contribute" id="about_apply_btn_id">
+          <a><span>APPLY</span></a>
+          <img src="public/btn_arrow/main_btn_arrow.png" class="about_main_btn_arrow" id="about_main_btn_arrow_id">
+        </button>
       </div>
-      <!-- serviceのPC画面 -->
-      <div class="block servise row m-0 d-none d-md-block inview_re fadeIn_up">
-          <p class="service_h1">SERVISE</p>
-          <div class="col-12 service_content p-0">
-              <button class="service_flame">
-                  <img src="public/icons_img/icon_1.png">
-                  <div class="servise_info">
-                      <p class="servise_name">JACKET</p>
-                      <div class="servise_plice">
-                          <p class="yen">¥</p>
-                          <p class="plice">22,000~</p>
-                      </div>
-                  </div>
-                  <a href="" class="view_more_link">VIEW MORE
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                  </a>
-              </button>
-              <button class="service_flame">
-                  <img src="public/icons_img/icon_3.png">
-                  <div class="servise_info">
-                      <p class="servise_name">SHIRTS</p>
-                      <div class="servise_plice">
-                          <p class="yen">¥</p>
-                          <p class="plice">5,000~</p>
-                      </div>
-                  </div>
-                  <a href="" class="view_more_link">VIEW MORE
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                  </a>
-              </button>
-              <button class="service_flame">
-                  <img src="public/icons_img/icon_2.png">
-                  <div class="servise_info">
-                      <p class="bottoms">BOTTOMS</p>
-                      <div class="servise_plice">
-                          <p class="yen">¥</p>
-                          <p class="plice">10,000~</p>
-                      </div>
-                  </div>
-                  <a href="" class="view_more_link">VIEW MORE
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                  </a>
-              </button>
-              <button class="service_flame">
-                  <img src="public/icons_img/icon_4.png">
-                  <div class="servise_info">
-                      <p class="accesary">ACCESARY</p>
-                      <div class="servise_plice">
-                          <p class="yen">¥</p>
-                          <p class="plice">3,000~</p>
-                      </div>
-                  </div>
-                  <a href="" class="view_more_link">VIEW MORE
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                  </a>
-              </button>
-          </div>
+      <div class="about_main_img">
+        <img src="public/display_img/display_img_1.png">
       </div>
-      <!-- -->
-      <!-- serviceのスマホ画面 -->
-      <div class="phone_block phone_service row d-md-none d-block m-0 inview_re fadeIn_up">
-        <p class="service_h1">SERVISE</p>
-          <div class="col-12 service_content_top p-0">
-            <button class="phone_service_flame btn">
-              <img src="public/icons_img/icon_1.png">
-              <div class="servise_info">
-                  <p class="servise_name jucket_service">JACKET</p>
-                  <div class="servise_plice">
-                      <p class="yen">¥</p>
-                      <p class="plice">22,000~</p>
-                  </div>
-              </div>
-              <a href="" class="view_more_link">VIEW MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </a>
+      <div class="background-right about_background_right d-none d-md-block"></div>
+    </div>
+    <!-- serviceのPC画面 -->
+    <div class="block servise row m-0 d-none d-md-block inview_re fadeIn_up">
+      <p class="service_h1">SERVISE</p>
+      <div class="col-12 service_content p-0">
+        <button class="service_flame">
+          <img src="public/icons_img/icon_1.png">
+          <div class="servise_info">
+            <p class="servise_name">JACKET</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">22,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+        <button class="service_flame">
+          <img src="public/icons_img/icon_3.png">
+          <div class="servise_info">
+            <p class="servise_name">SHIRTS</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">5,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+        <button class="service_flame">
+          <img src="public/icons_img/icon_2.png">
+          <div class="servise_info">
+            <p class="bottoms">BOTTOMS</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">10,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+        <button class="service_flame">
+          <img src="public/icons_img/icon_4.png">
+          <div class="servise_info">
+            <p class="accesary">ACCESARY</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">3,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+    <!-- -->
+    <!-- serviceのスマホ画面 -->
+    <div class="phone_block phone_service row d-md-none d-block m-0 inview_re fadeIn_up">
+      <p class="service_h1">SERVISE</p>
+      <div class="col-12 service_content_top p-0">
+        <button class="phone_service_flame btn">
+          <img src="public/icons_img/icon_1.png">
+          <div class="servise_info">
+            <p class="servise_name jucket_service">JACKET</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">22,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+        <button class="phone_service_flame btn">
+          <img src="public/icons_img/icon_3.png">
+          <div class="servise_info">
+            <p class="servise_name shirts_service">SHIRTS</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">5,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+      </div>
+      <div class="col-12 service_content_down p-0">
+        <button class="phone_service_flame btn">
+          <img src="public/icons_img/icon_2.png">
+          <div class="servise_info">
+            <p class="servise_name bottoms_service">BOTTOMS</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">10,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+        <button class="phone_service_flame btn">
+          <img src="public/icons_img/icon_4.png">
+          <div class="servise_info">
+            <p class="servise_name accesary_service">ACCESARY</p>
+            <div class="servise_plice">
+              <p class="yen">¥</p>
+              <p class="plice">3,000~</p>
+            </div>
+          </div>
+          <a href="" class="view_more_link">VIEW MORE
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </a>
+        </button>
+      </div>
+    </div>
+    <!-- -->
+    <div class="block review row p-0 inview_re fadeIn_up">
+      <div class="background-left review_background_left p-0">
+        <p class="h1 review_h1">REVIEW</p>
+        <div class="phone_backfround d-md-none d-block"></div>
+        <!-- スマホ画面時のメイン画像 -->
+        <div class="phone_main_img_area d-md-none d-block d-flex">
+          <div class="phone_main_img_area_1">
+            <img src="public/phone_main_img/review_img_1.png" class="review_img_1">
+            <div class="review_main_img_area_explain">
+              <p class="year">2022.07.08</p>
+              <p class="inistial">K.H</p>
+              <p class="san">さん</p>
+            </div>
+            <button class="btn review_main_img_area_btn review_main_img_1_area">
+              <a>拡大表示で見る</a>
+              <img src="public/btn_arrow/arrow_reiview.png">
             </button>
-            <button class="phone_service_flame btn">
-              <img src="public/icons_img/icon_3.png">
-              <div class="servise_info">
-                  <p class="servise_name shirts_service">SHIRTS</p>
-                  <div class="servise_plice">
-                      <p class="yen">¥</p>
-                      <p class="plice">5,000~</p>
-                  </div>
-              </div>
-              <a href="" class="view_more_link">VIEW MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </a>
+          </div>
+          <div class="phone_main_img_area_2">
+            <img src="public/phone_main_img/review_img_2.png" class="review_img_2">
+            <div class="review_main_img_area_explain">
+              <p class="year">2022.07.08</p>
+              <p class="inistial">K.H</p>
+              <p class="san">さん</p>
+            </div>
+            <button class="btn review_main_img_area_btn review_main_img_1_area">
+              <a>拡大表示で見る</a>
+              <img src="public/btn_arrow/arrow_reiview.png">
             </button>
           </div>
-          <div class="col-12 service_content_down p-0">
-            <button class="phone_service_flame btn">
-              <img src="public/icons_img/icon_2.png">
-              <div class="servise_info">
-                  <p class="servise_name bottoms_service">BOTTOMS</p>
-                  <div class="servise_plice">
-                      <p class="yen">¥</p>
-                      <p class="plice">10,000~</p>
-                  </div>
-              </div>
-              <a href="" class="view_more_link">VIEW MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </a>
-            </button>
-            <button class="phone_service_flame btn">
-              <img src="public/icons_img/icon_4.png">
-              <div class="servise_info">
-                  <p class="servise_name accesary_service">ACCESARY</p>
-                  <div class="servise_plice">
-                      <p class="yen">¥</p>
-                      <p class="plice">3,000~</p>
-                  </div>
-              </div>
-              <a href="" class="view_more_link">VIEW MORE
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-              </a>
-            </button>
+        </div>
+        <!-- -->
+        <div class="review_outer">
+          <div class="review_h2_outer">
+            <p class="h2 review_h2">実際の利用者の声をリアルにお届け！！</p>
+            <p class="h2 review_h2">用途ははそれぞれ！</p>
           </div>
+          <div class="review_explains_outer">
+            <p class="review_explain">作成するものはあなたの人生の一着。</p>
+            <p class="review_explain">一緒に創り上げた作品を一部ではありますがご紹介させて頂きます。</p>
+            <p class="review_explain">バンドのライブ衣装やビジネスカジュアルなシーンにて、</p>
+            <p class="review_explain">勝負の一着を創作する。</p>
+          </div>
+          <div class="review_explains_outer">
+            <p class="review_explain">用途は様々ですが、共通点が一つだけあります。</p>
+            <p class="review_explain">それは、どの作品もお客様と共作したという点です。</p>
+            <p class="review_explain">あなたの個性を表現する時、是非ご参考に</p>
+            <p class="review_explain">して下さい！</p>
+          </div>
+        </div>
+        <div class="review_btn_area">
+          <button class="btn review_apply_btn review_btn" id="review_apply_btn_id">
+            <a><span>APPLY</span></a>
+            <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_apply_btn_arrow_id">
+          </button>
+          <button class="btn review_view_more_btn review_btn" id="review_view_more_btn_id">
+            <a><span>MORE</span></a>
+            <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_more_btn_arrow_id">
+          </button>
+        </div>
       </div>
-      <!-- -->
-      <div class="block review row p-0 inview_re fadeIn_up">
-          <div class="background-left review_background_left p-0">
-              <p class="h1 review_h1">REVIEW</p>
-              <div class="phone_backfround d-md-none d-block"></div>
-              <!-- スマホ画面時のメイン画像 -->
-              <div class="phone_main_img_area d-md-none d-block d-flex">
-                  <div class="phone_main_img_area_1">
-                      <img src="public/phone_main_img/review_img_1.png" class="review_img_1">
-                      <div class="review_main_img_area_explain">
-                          <p class="year">2022.07.08</p>
-                          <p class="inistial">K.H</p>
-                          <p class="san">さん</p>
-                      </div>
-                      <button class="btn review_main_img_area_btn review_main_img_1_area">
-                          <a>拡大表示で見る</a>
-                          <img src="public/btn_arrow/arrow_reiview.png">
-                      </button>
-                  </div>
-                  <div class="phone_main_img_area_2">
-                      <img src="public/phone_main_img/review_img_2.png" class="review_img_2">
-                      <div class="review_main_img_area_explain">
-                          <p class="year">2022.07.08</p>
-                          <p class="inistial">K.H</p>
-                          <p class="san">さん</p>
-                      </div>
-                      <button class="btn review_main_img_area_btn review_main_img_1_area">
-                          <a>拡大表示で見る</a>
-                          <img src="public/btn_arrow/arrow_reiview.png">
-                      </button>
-                  </div>
-              </div>
-              <!-- -->
-              <div class="review_outer">
-                  <div class="review_h2_outer">
-                    <p class="h2 review_h2">実際の利用者の声をリアルにお届け！！</p>
-                    <p class="h2 review_h2">用途ははそれぞれ！</p>
-                  </div>
-                  <div class="review_explains_outer">
-                      <p class="review_explain">作成するものはあなたの人生の一着。</p>
-                      <p class="review_explain">一緒に創り上げた作品を一部ではありますがご紹介させて頂きます。</p>
-                      <p class="review_explain">バンドのライブ衣装やビジネスカジュアルなシーンにて、</p>
-                      <p class="review_explain">勝負の一着を創作する。</p>
-                  </div>
-                  <div class="review_explains_outer">
-                      <p class="review_explain">用途は様々ですが、共通点が一つだけあります。</p>
-                      <p class="review_explain">それは、どの作品もお客様と共作したという点です。</p>
-                      <p class="review_explain">あなたの個性を表現する時、是非ご参考に</p>
-                      <p class="review_explain">して下さい！</p>
-                  </div>
-              </div>
-              <div class="review_btn_area">
-                  <button class="btn review_apply_btn review_btn" id="review_apply_btn_id">
-                      <a><span>APPLY</span></a>
-                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_apply_btn_arrow_id">
-                  </button>
-                  <button class="btn review_view_more_btn review_btn" id="review_view_more_btn_id">
-                      <a><span>MORE</span></a>
-                      <img src="public/btn_arrow/main_btn_arrow.png" class="review_main_btn_arrow" id="review_more_btn_arrow_id">
-                  </button>
-              </div>
-          </div>
-          <div class="review_main_img_1 d-none d-md-block">
-              <img src="public/display_img/display_img_2.png">
-              <div class="review_main_img_area_explain">
-                  <p class="year">2022.07.08</p>
-                  <p class="inistial">K.H</p>
-                  <p class="san">さん</p>
-              </div>
-              <button class="btn review_main_img_area_btn review_main_img_1_area">
-                  <a>拡大表示で見る</a>
-                  <img src="public/btn_arrow/big_btn_arrow.png">
-              </button>
-          </div>
-          <div class="review_main_img_2 d-none d-md-block">
-              <img src="public/display_img/display_img_3.png">
-              <div class="review_main_img_area_explain">
-                  <p class="year">2022.08.09</p>
-                  <p class="inistial">I.S</p>
-                  <p class="san">さん</p>
-              </div>
-              <button class="btn review_main_img_area_btn review_main_img_1_area">
-                  <a>拡大表示で見る</a>
-                  <img src="public/btn_arrow/big_btn_arrow.png">
-              </button>
-          </div>
+      <div class="review_main_img_1 d-none d-md-block">
+        <img src="public/display_img/display_img_2.png">
+        <div class="review_main_img_area_explain">
+          <p class="year">2022.07.08</p>
+          <p class="inistial">K.H</p>
+          <p class="san">さん</p>
+        </div>
+        <button class="btn review_main_img_area_btn review_main_img_1_area">
+          <a>拡大表示で見る</a>
+          <img src="public/btn_arrow/big_btn_arrow.png">
+        </button>
       </div>
+      <div class="review_main_img_2 d-none d-md-block">
+        <img src="public/display_img/display_img_3.png">
+        <div class="review_main_img_area_explain">
+          <p class="year">2022.08.09</p>
+          <p class="inistial">I.S</p>
+          <p class="san">さん</p>
+        </div>
+        <button class="btn review_main_img_area_btn review_main_img_1_area">
+          <a>拡大表示で見る</a>
+          <img src="public/btn_arrow/big_btn_arrow.png">
+        </button>
+      </div>
+    </div>
   </div>
   <!-- footer PC -->
   <footer class="footer_PC">
-      <div class="footer_logo_area">
-          <img src="public/logo/logo_footer.png" id="logo_footer">
-          <button class="btn footer_btn">
-            <a>お申し込み</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-          </button>
-      </div>
-      <div class="site_map">
-          <ul class="site_map_link_guid link_guid">
-            サイトマップ
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-          </ul>
-          <ul class="site_map_nav_links navbar nav">
-            <li class="site_map_nav_link nav-item active">
-                <a class="nav-link" href="#">・TOP</a>
-            </li>
-            <li class="site_map_nav_link nav-item active">
-                <a class="nav-link" href="#">・ABOUT</a>
-            </li>
-            <li class="site_map_nav_link nav-item active">
-                <a class="nav-link" href="#">・SERVICE</a>
-            </li>
-            <li class="site_map_nav_link nav-item active">
-                <a class="nav-link" href="#">・REVIEW</a>
-            </li>
-          </ul>
-      </div>
-      <div class="relastion_site">
-          <ul class="relastion_site_link_guid link_guid">
-              関連サイト
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-              </svg>
-          </ul>
-          <ul class="relastion_site_nav_links navbar nav">
-            <li class="relastion_site_nav_link nav-item active">
-                <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-            </li>
-            <li class="relastion_site_nav_link nav-item active">
-                <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-            </li>
-            <li class="relastion_site_nav_link nav-item active">
-                <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-            </li>
-          </ul>
-      </div>
-      <div class="infomastion">
-        <ul class="infomastion_link_guid link_guid">
-            お問い合わせ
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
-        </ul>
-        <ul class="infomastion_nav_links navbar nav">
-          <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">住所：東京都渋谷区1-1</a>
-          </li>
-          <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">TEL：00-1234-5678</a>
-          </li>
-          <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">E-mail：yours_@co.jp</a>
-          </li>
-        </ul>
-      </div>
-      <div class="SNS">
-        <ul class="infomastion_link_guid link_guid">
-            公式SNS
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
-        </ul>
-        <ul class="SNS_nav_links navbar nav">
-          <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-square-facebook"></i>
-              </a>
-          </li>
-          <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-          </li>
-          <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-          </li>
-        </ul>
-      </div>
+    <div class="footer_logo_area">
+      <img src="public/logo/logo_footer.png" id="logo_footer">
+      <button class="btn footer_btn">
+        <a>お申し込み</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
+    </div>
+    <div class="site_map">
+      <ul class="site_map_link_guid link_guid">
+        サイトマップ
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </ul>
+      <ul class="site_map_nav_links navbar nav">
+        <li class="site_map_nav_link nav-item active">
+          <a class="nav-link" href="#">・TOP</a>
+        </li>
+        <li class="site_map_nav_link nav-item active">
+          <a class="nav-link" href="#">・ABOUT</a>
+        </li>
+        <li class="site_map_nav_link nav-item active">
+          <a class="nav-link" href="#">・SERVICE</a>
+        </li>
+        <li class="site_map_nav_link nav-item active">
+          <a class="nav-link" href="#">・REVIEW</a>
+        </li>
+      </ul>
+    </div>
+    <div class="relastion_site">
+      <ul class="relastion_site_link_guid link_guid">
+        関連サイト
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </ul>
+      <ul class="relastion_site_nav_links navbar nav">
+        <li class="relastion_site_nav_link nav-item active">
+          <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+        </li>
+        <li class="relastion_site_nav_link nav-item active">
+          <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+        </li>
+        <li class="relastion_site_nav_link nav-item active">
+          <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+        </li>
+      </ul>
+    </div>
+    <div class="infomastion">
+      <ul class="infomastion_link_guid link_guid">
+        お問い合わせ
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </ul>
+      <ul class="infomastion_nav_links navbar nav">
+        <li class="infomastion_nav_link nav-item active">
+          <a class="nav-link" href="#">住所：東京都渋谷区1-1</a>
+        </li>
+        <li class="infomastion_nav_link nav-item active">
+          <a class="nav-link" href="#">TEL：00-1234-5678</a>
+        </li>
+        <li class="infomastion_nav_link nav-item active">
+          <a class="nav-link" href="#">E-mail：yours_@co.jp</a>
+        </li>
+      </ul>
+    </div>
+    <div class="SNS">
+      <ul class="infomastion_link_guid link_guid">
+        公式SNS
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </ul>
+      <ul class="SNS_nav_links navbar nav">
+        <li class="SNS_nav_link nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+        </li>
+        <li class="SNS_nav_link nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="SNS_nav_link nav-item active">
+          <a class="nav-link" href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <!-- -->
   <!-- footer スマホ -->
   <footer class="footer_phone d-md-none d-block">
     <div class="footer_logo_area">
-        <img src="public/logo/logo_footer.png" id="logo_footer">
-        <button class="btn footer_btn">
-          <a>お申し込み</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </button>
+      <img src="public/logo/logo_footer.png" id="logo_footer">
+      <button class="btn footer_btn">
+        <a>お申し込み</a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        </svg>
+      </button>
     </div>
     <div class="footer_middle">
-        <div class="site_map">
-            <ul class="site_map_link_guid link_guid">
-              サイトマップ
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-              </svg>
-            </ul>
-            <ul class="site_map_nav_links navbar nav">
-              <li class="site_map_nav_link nav-item active site_map_nav_link_top">
-                  <a class="nav-link" href="#">・TOP</a>
-              </li>
-              <li class="site_map_nav_link nav-item active">
-                  <a class="nav-link" href="#">・ABOUT</a>
-              </li>
-              <li class="site_map_nav_link nav-item active">
-                  <a class="nav-link" href="#">・SERVICE</a>
-              </li>
-              <li class="site_map_nav_link nav-item active">
-                  <a class="nav-link" href="#">・REVIEW</a>
-              </li>
-            </ul>
-        </div>
-        <div class="relastion_site">
-            <ul class="relastion_site_link_guid link_guid">
-                関連サイト
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </ul>
-            <ul class="relastion_site_nav_links navbar nav">
-              <li class="relastion_site_nav_link nav-item active">
-                  <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-              </li>
-              <li class="relastion_site_nav_link nav-item active">
-                  <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-              </li>
-              <li class="relastion_site_nav_link nav-item active">
-                  <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
-              </li>
-            </ul>
-        </div>
+      <div class="site_map">
+        <ul class="site_map_link_guid link_guid">
+          サイトマップ
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </ul>
+        <ul class="site_map_nav_links navbar nav">
+          <li class="site_map_nav_link nav-item active site_map_nav_link_top">
+            <a class="nav-link" href="#">・TOP</a>
+          </li>
+          <li class="site_map_nav_link nav-item active">
+            <a class="nav-link" href="#">・ABOUT</a>
+          </li>
+          <li class="site_map_nav_link nav-item active">
+            <a class="nav-link" href="#">・SERVICE</a>
+          </li>
+          <li class="site_map_nav_link nav-item active">
+            <a class="nav-link" href="#">・REVIEW</a>
+          </li>
+        </ul>
+      </div>
+      <div class="relastion_site">
+        <ul class="relastion_site_link_guid link_guid">
+          関連サイト
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
+        </ul>
+        <ul class="relastion_site_nav_links navbar nav">
+          <li class="relastion_site_nav_link nav-item active">
+            <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+          </li>
+          <li class="relastion_site_nav_link nav-item active">
+            <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+          </li>
+          <li class="relastion_site_nav_link nav-item active">
+            <a class="nav-link" href="#">http//aaaa/bb/ccccccccc</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <div class="footer_middle">
       <div class="infomastion">
         <ul class="infomastion_link_guid link_guid">
-            お問い合わせ
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
+          お問い合わせ
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
         </ul>
         <ul class="infomastion_nav_links navbar nav">
           <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">住所：東京都渋谷区1-1</a>
+            <a class="nav-link" href="#">住所：東京都渋谷区1-1</a>
           </li>
           <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">TEL：00-1234-5678</a>
+            <a class="nav-link" href="#">TEL：00-1234-5678</a>
           </li>
           <li class="infomastion_nav_link nav-item active">
-              <a class="nav-link" href="#">E-mail：yours_@co.jp</a>
+            <a class="nav-link" href="#">E-mail：yours_@co.jp</a>
           </li>
         </ul>
       </div>
       <div class="SNS">
         <ul class="infomastion_link_guid link_guid">
-            公式SNS
-            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-            </svg>
+          公式SNS
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+          </svg>
         </ul>
         <ul class="SNS_nav_links navbar nav">
           <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-square-facebook"></i>
-              </a>
+            <a class="nav-link" href="#">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
           </li>
           <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
+            <a class="nav-link" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
           <li class="SNS_nav_link nav-item active">
-              <a class="nav-link" href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
+            <a class="nav-link" href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
           </li>
         </ul>
       </div>
