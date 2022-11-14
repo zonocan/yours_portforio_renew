@@ -18,7 +18,7 @@ $(function() {
   //topページのボタン
   $('#top_apply_btn').hover(
     function() {
-      $('.humberger_nav').fadeOut(function() {
+      $('#top_page_btn_arrow_id').fadeOut(function() {
         $(this).fadeToggle();
       });
     }
