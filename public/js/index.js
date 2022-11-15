@@ -25,6 +25,7 @@ $(function() {
   );
 
   //aboutページボタン
+  //申し込みボタン
   $('#about_apply_btn_id').on('mouseover', function() {
     $('#about_main_btn_arrow_id').attr('src', 'public/arrow_hover/arrow_hover.png');
   });
@@ -40,7 +41,6 @@ $(function() {
   $('#review_apply_btn_id').on('mouseleave', function() {
     $('#review_apply_btn_arrow_id').attr('src', 'public/btn_arrow/main_btn_arrow.png');
   });
-
   //②もっと見るボタン
   $('#review_view_more_btn_id').on('mouseover', function() {
     $('#review_more_btn_arrow_id').attr('src', 'public/arrow_hover/arrow_hover.png');
