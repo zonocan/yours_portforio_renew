@@ -1813,6 +1813,15 @@ body {}
     padding-bottom: 25px;
   }
 
+  /* 11/17追加 スマホ画面のservice画面 */
+
+  #jucket_service_btn:hover {
+    background-image: url(../phone_hover/jucket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /**/
+
   /* review */
   .review_background_left {
     background-color: #fff;
