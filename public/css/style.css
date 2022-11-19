@@ -58,7 +58,7 @@ html {}
 body {}
 
 /* PC画面 */
-/* ヘッダー　*/
+/* ヘッダー */
 .header {
   width: 100%;
   height: 50px;
@@ -198,7 +198,15 @@ body {}
   margin: 6px 0 0 5px;
 }
 
-/* ヘッダー　*/
+.container-fluid {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+/* ヘッダー */
 /* トップページ */
 .top_page {
   width: 100%;
@@ -362,7 +370,7 @@ body {}
 }
 
 /* トップページ */
-/* 共通項目　*/
+/* 共通項目 */
 .block {
   width: 100%;
   display: flex;
@@ -391,8 +399,8 @@ body {}
   font-size: 15px;
 }
 
-/* 共通項目　*/
-/* about　*/
+/* 共通項目 */
+/* about */
 .about {
   display: flex;
   margin: 115px 0 100px 0;
@@ -516,7 +524,7 @@ body {}
   z-index: -1;
 }
 
-/* about　*/
+/* about */
 /* servise */
 .servise {
   display: flex;
@@ -619,9 +627,7 @@ body {}
 }
 
 /* 11月15日 service_btn hover 追加 */
-
 /* jucket_service_btn */
-
 #jucket_service_btn::before,
 #jucket_service_btn::after,
 .jucket_service_btn_outer::before,
@@ -680,7 +686,6 @@ body {}
 
 /* jucket_service_btn */
 /* shirts_service_btn */
-
 #shirts_service_btn::before,
 #shirts_service_btn::after,
 .shirts_service_btn_outer::before,
@@ -739,7 +744,6 @@ body {}
 
 /* shirts_service_btn */
 /* bottoms_service_btn */
-
 #bottoms_service_btn::before,
 #bottoms_service_btn::after,
 .bottoms_service_btn_outer::before,
@@ -798,7 +802,6 @@ body {}
 
 /* bottoms_service_btn */
 /* accesary_service_btn */
-
 #accesary_service_btn::before,
 #accesary_service_btn::after,
 .accesary_service_btn_outer::before,
@@ -856,9 +859,7 @@ body {}
 }
 
 /* accesary_service_btn */
-
 /* 11月15日 service_btn hover 追加 */
-
 /* servise */
 /* review */
 .review {
@@ -1169,9 +1170,9 @@ body {}
 .fa-brands {
   font-size: 15px;
 }
+
 /* footer */
 /* PC画面 */
-
 /* タブレッドの表示 */
 @media (max-width: 768px) {
 
@@ -1501,6 +1502,11 @@ body {}
 @media (max-width: 600px) {
 
   /*共通*/
+  .container-fluid {
+    width: 99%;
+    margin: 0;
+  }
+
   .block {
     margin: 50px 0 0 0;
   }
@@ -1814,14 +1820,13 @@ body {}
   }
 
   /* 11/17追加 スマホ画面のservice画面 */
-
   #jucket_service_btn:hover {
     background-image: url(../phone_hover/jucket.png);
     background-repeat: no-repeat;
     background-position: center;
   }
-  /**/
 
+  /**/
   /* review */
   .review_background_left {
     background-color: #fff;

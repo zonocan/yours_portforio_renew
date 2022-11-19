@@ -32,7 +32,7 @@
     <div class="logo_area col-6">
       <img src="public/logo/logo.png" id="header_logo">
       <!-- 10月10日追加 SNSリンク-->
-      <div class="header_nav_link_area SNS_block p-0">
+      <div class="header_nav_link_area SNS_block d-none d-md-block p-0">
         <ul class="nav_link_area nav header_SNS_nav_links">
           <li class="header_SNS_nav_link nav_item active m-0 p-0">
             <a class="nav-link header_sns_link" href="">
@@ -74,14 +74,14 @@
         <a><span>APPLY</span></a>
         <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow" id="header_btn_arrow_id">
       </button>
-      <!-- スマホ画面時のバーガーメニュー　-->
+      <!-- スマホ画面時のバーガーメニュー -->
       <div class="d-md-none d-block">
         <button class="humberger_menu active btn d-md-none d-block" id="humberger_menu_id">
           <span></span>
           <span></span>
           <span></span>
         </button>
-        <!-- 11月13日追加 ハンバーガーメニュ　-->
+        <!-- 11月13日追加 ハンバーガーメニュ -->
         <div class="humberger_nav active" id="humberger_nav_id">
           <div class="humberger_SNS">
             <p class="h3">公式SNS</p>
@@ -124,7 +124,7 @@
             </ul>
           </div>
         </div>
-        <!-- 11月13日追加 ハンバーガーメニュ　-->
+        <!-- 11月13日追加 ハンバーガーメニュ -->
       </div>
     </div>
   </header>
@@ -205,7 +205,7 @@
         <button class="service_flame" id="jucket_service_btn">
           <span class="jucket_service_btn_outer">
             <span class="jucket_service_btn_inner">
-              <img src="public/icons_img/icon_1.png">
+              <img src="public/icons_img/icon_1.png" id="jucket_service_btn_icon">
               <div class="servise_info">
                 <p class="servise_name">JACKET</p>
                 <div class="servise_plice">
@@ -227,7 +227,7 @@
         <button class="service_flame" id="shirts_service_btn">
           <span class="shirts_service_btn_outer">
             <span class="shirts_service_btn_inner">
-              <img src="public/icons_img/icon_3.png">
+              <img src="public/icons_img/icon_3.png" id="shirts_service_btn_icon">
               <div class="servise_info">
                 <p class="servise_name">SHIRTS</p>
                 <div class="servise_plice">
@@ -249,7 +249,7 @@
         <button class="service_flame" id="bottoms_service_btn">
           <span class="bottoms_service_btn_outer">
             <span class="bottoms_service_btn_inner">
-              <img src="public/icons_img/icon_2.png">
+              <img src="public/icons_img/icon_2.png" id="bottoms_service_btn_icon">
               <div class="servise_info">
                 <p class="bottoms">BOTTOMS</p>
                 <div class="servise_plice">
@@ -271,7 +271,7 @@
         <button class="service_flame" id="accesary_service_btn">
           <span class="accesary_service_btn_outer">
             <span class="accesary_service_btn_inner">
-              <img src="public/icons_img/icon_4.png">
+              <img src="public/icons_img/icon_4.png" id="accesary_service_btn_icon">
               <div class="servise_info">
                 <p class="accesary">ACCESARY</p>
                 <div class="servise_plice">
@@ -294,11 +294,11 @@
     </div>
     <!-- serviceのPC画面 -->
     <!-- serviceのスマホ画面 -->
-    <div class="phone_block phone_service row d-md-none d-block m-0 inview_re fadeIn_up">
+    <div class="phone_block phone_service row d-md-none d-block inview_re fadeIn_up">
       <p class="service_h1">SERVISE</p>
       <div class="col-12 service_content_top p-0">
         <button class="phone_service_flame btn" id="jucket_service_btn">
-          <img src="public/icons_img/icon_1.png">
+          <img src="public/icons_img/icon_1.png" id="jucket_service_btn_icon">
           <div class="servise_info">
             <p class="servise_name jucket_service">JACKET</p>
             <div class="servise_plice">
@@ -316,7 +316,7 @@
           </a>
         </button>
         <button class="phone_service_flame btn" id="shirts_service_btn">
-          <img src="public/icons_img/icon_3.png">
+          <img src="public/icons_img/icon_3.png" id="shirts_service_btn_icon">
           <div class="servise_info">
             <p class="servise_name shirts_service">SHIRTS</p>
             <div class="servise_plice">
@@ -336,7 +336,7 @@
       </div>
       <div class="col-12 service_content_down p-0">
         <button class="phone_service_flame btn" id="bottoms_service_btn">
-          <img src="public/icons_img/icon_2.png">
+          <img src="public/icons_img/icon_2.png" id="bottoms_service_btn_icon">
           <div class="servise_info">
             <p class="servise_name bottoms_service">BOTTOMS</p>
             <div class="servise_plice">
@@ -354,7 +354,7 @@
           </a>
         </button>
         <button class="phone_service_flame btn" id="accesary_service_btn">
-          <img src="public/icons_img/icon_4.png">
+          <img src="public/icons_img/icon_4.png" id="accesary_service_btn_icon">
           <div class="servise_info">
             <p class="servise_name accesary_service">ACCESARY</p>
             <div class="servise_plice">
@@ -388,9 +388,9 @@
               <p class="inistial">K.H</p>
               <p class="san">さん</p>
             </div>
-            <button class="btn review_main_img_area_btn review_main_img_1_area">
+            <button class="btn review_main_img_area_btn review_main_img_1_area" id="review_detail_btn_1">
               <a>拡大表示で見る</a>
-              <img src="public/btn_arrow/arrow_reiview.png">
+              <img src="public/btn_arrow/arrow_reiview.png" id="review_detail_btn_1_arrow">
             </button>
           </div>
           <div class="phone_main_img_area_2">
@@ -400,9 +400,9 @@
               <p class="inistial">K.H</p>
               <p class="san">さん</p>
             </div>
-            <button class="btn review_main_img_area_btn review_main_img_1_area">
+            <button class="btn review_main_img_area_btn review_main_img_1_area" id="review_detail_btn_2">
               <a>拡大表示で見る</a>
-              <img src="public/btn_arrow/arrow_reiview.png">
+              <img src="public/btn_arrow/arrow_reiview.png" id="review_detail_btn_2_arrow">
             </button>
           </div>
         </div>
@@ -437,15 +437,15 @@
         </div>
       </div>
       <div class="review_main_img_1 d-none d-md-block">
-        <img src="public/display_img/display_img_2.png">
+        <img src="public/display_img/display_img_2.png" class="">
         <div class="review_main_img_area_explain">
           <p class="year">2022.07.08</p>
           <p class="inistial">K.H</p>
           <p class="san">さん</p>
         </div>
-        <button class="btn review_main_img_area_btn review_main_img_1_area">
+        <button class="btn review_main_img_area_btn review_main_img_1_area" id="review_detail_btn_1">
           <a>拡大表示で見る</a>
-          <img src="public/btn_arrow/big_btn_arrow.png">
+          <img src="public/btn_arrow/big_btn_arrow.png" id="review_detail_btn_1_arrow">
         </button>
       </div>
       <div class="review_main_img_2 d-none d-md-block">
@@ -455,9 +455,9 @@
           <p class="inistial">I.S</p>
           <p class="san">さん</p>
         </div>
-        <button class="btn review_main_img_area_btn review_main_img_1_area">
+        <button class="btn review_main_img_area_btn review_main_img_1_area" id="review_detail_btn_2">
           <a>拡大表示で見る</a>
-          <img src="public/btn_arrow/big_btn_arrow.png">
+          <img src="public/btn_arrow/big_btn_arrow.png" id="review_detail_btn_2_arrow">
         </button>
       </div>
     </div>
