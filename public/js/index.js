@@ -80,18 +80,35 @@ $(function() {
     $('#review_more_btn_arrow_id').attr('src', 'public/btn_arrow/main_btn_arrow.png');
   });
 
-  //詳細ボタン1
-  $('#review_detail_btn_1').hover(
+  //詳細ボタン1(PC)
+  $('#review_detail_btn_1_pc').hover(
     function() {
-      $('#review_detail_btn_1_arrow').fadeOut(function() {
+      $('#review_detail_btn_1_arrow_pc').fadeOut(function() {
         $(this).fadeToggle();
       });
     }
   );
-  //詳細ボタン2
-  $('#review_detail_btn_2').hover(
+  //詳細ボタン2(PC)
+  $('#review_detail_btn_2_pc').hover(
     function() {
-      $('#review_detail_btn_2_arrow').fadeOut(function() {
+      $('#review_detail_btn_2_arrow_pc').fadeOut(function() {
+        $(this).fadeToggle();
+      });
+    }
+  );
+
+  //詳細ボタン1(SP)
+  $('#review_detail_btn_1_sp').hover(
+    function() {
+      $('#review_detail_btn_1_arrow_sp').fadeOut(function() {
+        $(this).fadeToggle();
+      });
+    }
+  );
+  //詳細ボタン2(SP)
+  $('#review_detail_btn_2_sp').hover(
+    function() {
+      $('#review_detail_btn_2_arrow_sp').fadeOut(function() {
         $(this).fadeToggle();
       });
     }
