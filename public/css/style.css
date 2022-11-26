@@ -200,6 +200,7 @@ body {}
 
 .container-fluid {
   width: 100%;
+  position: relative;
 }
 
 .row {
@@ -1073,8 +1074,155 @@ body {}
 }
 
 /* review */
+/* reviewのメイン写真ポップアップ */
+
+.over_view_detail_background {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  /*background-color: #111111;
+  opacity: 0.8;*/
+  background:rgba(0,0,0,0.6);
+  visibility: hidden;
+}
+
+/*.over_view_detail_background.active {
+  transform: translateX(100%);
+  transition: ease .4s;
+}*/
+
+.over_view_contents {
+  width: 40%;
+  margin: 80px auto;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.people_name_flame {
+  display: flex;
+}
+
+.people_name_block {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+
+.people_name {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 6%;
+}
+
+.people_name_san {
+  font-family: Osaka;
+  font-size: 10px;
+  margin-top: 11px;
+}
+
+.date_block {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.date {
+  font-family: Osaka;
+  font-size: 10px;
+  margin-top: 11px;
+}
+
+.close_btn_block {
+  width: 7.5%;
+  margin-left:auto;
+}
+
+.close_btn {
+  background-color: #90000e;
+  border-radius: 0;
+  height: 30px;
+  align-items: center;
+}
+
+.close_btn span {
+  width: 15px;
+  height: 1px;
+  background-color: #fff;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+  z-index: 2;
+}
+
+.close_btn span:nth-child(1) {
+  top: -1px;
+  transform: rotate(45deg);
+}
+
+.close_btn span:nth-child(2) {
+  top: -2px;
+  transform: rotate(-45deg);
+}
+
+.item_explain_block {
+  background-color: #fff;
+  padding: 15px 0 15px 0;
+}
+
+.item_name_block {
+  display: flex;
+  margin-left: 5%;
+}
+
+.item_name {
+  font-size: 15px;
+  margin-right: 3%;
+}
+
+.price_block {
+  display: flex;
+  margin-left: 5%;
+}
+
+.price_mark {
+  font-size: 12px;
+  margin-right: 3%;
+}
+
+.yen_mark {
+  font-size: 12px;
+}
+
+.price {
+  font-size: 15px;
+}
+
+.yen_block {
+  display: flex;
+}
+
+.explain_block {
+  margin-left: 5%;
+}
+
+.explain {
+  font-family: Osaka;
+  font-size: 10px;
+}
+
+/*いいねボタンの実装*/
+.like_toggle.liked{
+  color: #90000e;
+}
+/* reviewのメイン写真ポップアップ */
 /* footer */
 .footer_PC {
+  position: relative;
+  z-index: 1;
   width: 100%;
   background-color: #111111;
   display: flex;
@@ -1499,7 +1647,7 @@ body {}
 }
 
 /* スマホの表示 */
-@media (max-width: 600px) {
+@media (max-width: 767px) {
 
   /*共通*/
   .container-fluid {

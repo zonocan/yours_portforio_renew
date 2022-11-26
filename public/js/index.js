@@ -88,6 +88,22 @@ $(function() {
       });
     }
   );
+
+  //詳細ボタン1(PC) レビューのポップアップ表示
+  $('#review_detail_btn_1_pc').on('click', function(){
+    $('#review_detail_contents_1').css({
+       "visibility":"visible",
+    });
+  });
+
+  //レビュー1のクローズボタン(PC)
+  $('#review_1_btn_close_btn').on('click', function(){
+    $('#review_detail_contents_1').css({
+      "visibility":"hidden",
+    });
+  });
+
+
   //詳細ボタン2(PC)
   $('#review_detail_btn_2_pc').hover(
     function() {
@@ -96,6 +112,12 @@ $(function() {
       });
     }
   );
+
+  //いいねボタン
+  let like = $('.like_toggle');
+  like.on('click', function(){
+    $(this).toggleClass('liked');
+  });
 
   //詳細ボタン1(SP)
   $('#review_detail_btn_1_sp').hover(
