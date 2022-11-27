@@ -112,21 +112,15 @@ $(function() {
   );
 
   //詳細ボタン1(PC) レビューのポップアップ表示
-  $('#review_detail_btn_1_pc').on('click', function(){
+  $('.review_main_img_area_btn').on('click', function(){
     $('.over_view_detail_background').css({
       "visibility":"visible",
     });
-    $('#review_detail_contents_1').css({
-       "visibility":"visible",
-    });
   });
 
-  //レビュー1のクローズボタン(PC)
-  $('#review_1_btn_close_btn').on('click', function(){
+  //レビューのクローズボタン(PC)
+  $('.close_btn').on('click', function(){
     $('.over_view_detail_background').css({
-      "visibility":"hidden",
-    });
-    $('#review_detail_contents_1').css({
       "visibility":"hidden",
     });
   });
