@@ -9,6 +9,28 @@ $(function() {
     }
   );
 
+  //スクロールリンク(PC)
+  $('.header_nav_links a[href^="#"]').click(function(){
+
+    //headerのクリック時のボーダ
+    $('.is_clicked').removeClass('is_clicked');
+    $(this).addClass('is_clicked');
+
+    //移動先を0px調整
+    var adjust = 0;
+    //移動のスピード
+    var speed = 400;
+    //アンカーの調整
+    var link_href = $(this).attr("href");
+    //移動先の調整
+    var link_target = $(href == "#" || href == "" ? 'html':href);
+    var link_position = target.offset().top + adjust;
+
+    //スクロールの実装
+    $('body,html').animate({scrollTop:link_position},speed,'swing');
+    return false;
+  });
+
   //humberger_menuの実装
   $('#humberger_menu_id').on('click', function() {
     $('#humberger_menu_id').toggleClass('close');
@@ -91,6 +113,9 @@ $(function() {
 
   //詳細ボタン1(PC) レビューのポップアップ表示
   $('#review_detail_btn_1_pc').on('click', function(){
+    $('.over_view_detail_background').css({
+      "visibility":"visible",
+    });
     $('#review_detail_contents_1').css({
        "visibility":"visible",
     });
@@ -98,6 +123,9 @@ $(function() {
 
   //レビュー1のクローズボタン(PC)
   $('#review_1_btn_close_btn').on('click', function(){
+    $('.over_view_detail_background').css({
+      "visibility":"hidden",
+    });
     $('#review_detail_contents_1').css({
       "visibility":"hidden",
     });

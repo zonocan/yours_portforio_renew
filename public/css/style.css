@@ -114,6 +114,15 @@ body {}
   margin-left: 30%;
 }
 
+/* 11/27 追加 */
+
+.is_clicked {
+  border-bottom: 1px solid #fff;
+  padding: 0 5 2 0;
+}
+
+/* 11/27 追加 */
+
 .header_nav_link a {
   font-family: Arial;
   color: #fff;

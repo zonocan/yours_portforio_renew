@@ -64,17 +64,17 @@
     <div class="nav_link_area header_link_area">
       <ul class="header_nav_links navbar nav">
         <!-- ヘッダーのナビリンク PC 画面-->
-        <li class="header_nav_link nav-item active">
-          <a class="nav-link" href="#">TOP</a>
+        <li class="header_nav_link nav-item">
+          <a class="nav-link header_link is_clicked" id="header_top_link" href="#top_page_id">TOP</a>
         </li>
-        <li class="header_nav_link nav-item active">
-          <a class="nav-link" href="#">ABOUT</a>
+        <li class="header_nav_link nav-item">
+          <a class="nav-link header_link" id="header_about_link" href="#about_id">ABOUT</a>
         </li>
-        <li class="header_nav_link nav-item active">
-          <a class="nav-link" href="#">SERVISE</a>
+        <li class="header_nav_link nav-item">
+          <a class="nav-link header_link" id="header_service_link" href="#servise_id">SERVISE</a>
         </li>
-        <li class="header_nav_link nav-item active">
-          <a class="nav-link" href="#">REVIEW</a>
+        <li class="header_nav_link nav-item">
+          <a class="nav-link header_link" id="header_review_link" href="#review_id">REVIEW</a>
         </li>
         <!-- ヘッダーのナビリンク-->
       </ul>
@@ -138,7 +138,7 @@
   </header>
   <div class="container-fluid p-0">
     <!-- topページ -->
-    <div class="top_page slider-area row p-0 inview_re fadeIn_up">
+    <div class="top_page slider-area row p-0 inview_re fadeIn_up" id="top_page_id">
       <div class="cacth_flase">
         <p class="cacth_flase_1">Design Your</p>
         <p class="cacth_flase_2">SPECIAL</p>
@@ -173,7 +173,7 @@
     </div>
     <!-- topページ -->
     <!-- aboutページ -->
-    <div class="block about row p-0 inview_re fadeIn_up">
+    <div class="block about row p-0 inview_re fadeIn_up" id="about_id">
       <div class="background-left about_background_left p-0">
         <p class="h1 about_h1">ABOUT</p>
         <!-- -->
@@ -207,7 +207,7 @@
     </div>
     <!-- aboutページ -->
     <!-- serviceのPC画面 -->
-    <div class="block servise row m-0 d-none d-md-block inview_re fadeIn_up">
+    <div class="block servise row m-0 d-none d-md-block inview_re fadeIn_up" id="servise_id">
       <p class="service_h1">SERVISE</p>
       <div class="col-12 service_content p-0">
         <button class="service_flame" id="jucket_service_btn">
@@ -383,7 +383,7 @@
     </div>
     <!-- serviceのスマホ画面 -->
     <!-- reviewの画面 -->
-    <div class="block review row p-0 inview_re fadeIn_up">
+    <div class="block review row p-0 inview_re fadeIn_up" id="review_id">
       <div class="background-left review_background_left p-0">
         <p class="h1 review_h1">REVIEW</p>
         <div class="phone_backfround d-md-none d-block"></div>
@@ -474,8 +474,8 @@
     <!-- reviewの画面 -->
   </div>
   <!-- ⓵reviewのメイン写真ポップアップ -->
-  <div class="over_view_detail_background" id="review_detail_contents_1">
-    <div class="over_view_contents">
+  <div class="over_view_detail_background">
+    <div class="over_view_contents" id="review_detail_contents_1">
       <div class="people_name_flame">
         <div class="people_name_block">
           <p class="people_name">K.H</p>
