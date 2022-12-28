@@ -1146,15 +1146,22 @@ body {}
 }
 
 .close_btn_block {
-  width: 7.5%;
+  /*width: 5.5%;*/
   margin-left:auto;
 }
 
 .close_btn {
   background-color: #90000e;
   border-radius: 0;
+  border: none;
   height: 30px;
   align-items: center;
+}
+
+.close_btn:hover {
+  opacity: 0.8;
+  background-color: #90000e;
+  border-radius: 0;
 }
 
 .close_btn span {
@@ -2049,4 +2056,12 @@ body {}
   .SNS_nav_link a {
     width: 28%;
   }
+
+/*12月28日追加*/
+/*  .close_btn_block {
+    width: 6.5%;
+    margin-left: auto;
+  }
+*/
+
 }
