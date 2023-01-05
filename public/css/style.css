@@ -363,18 +363,19 @@ body {}
 
 .scroll_bar {
   width: 2%;
-  height: 80px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #111111;
   position: absolute;
-  top: 575;
+  top: 550px;
   left: 49%;
   z-index: 1;
 }
 
 .scroll_bar p {
+  margin-top: 3px;
   font-family: Osaka;
   transform: rotate(90deg);
   color: #fff;
@@ -382,8 +383,24 @@ body {}
 }
 
 .scroll_bar_arrow {
-  margin-top: 20px;
+  position: absolute;
+  height: 40px;
+  top: 50px;
+  /*スクロールバーのアニメーション*/
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+  /*スクロールバーのアニメーション*/
 }
+
+/*スクロールバーのアニメーション*/
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+/*スクロールバーのアニメーション*/
 
 /* トップページ */
 /* 共通項目 */
@@ -458,7 +475,7 @@ body {}
 .about_apply_btn {
   position: relative;
   height: 40px;
-  width: 25%;
+  width: 180px;
   display: flex;
   margin: 45px 0 0 12%;
   background-color: #111111;
@@ -913,7 +930,7 @@ body {}
 .review_btn {
   position: relative;
   display: flex;
-  width: 25%;
+  width: 180px;
   height: 40px;
   border-radius: 0px;
   background-color: #111111;
@@ -1375,7 +1392,7 @@ body {}
   .top_page_btn {
     position: relative;
     display: flex;
-    width: 30%;
+    width: 150px;
     height: 37px;
     border: 1px #fff solid;
     border-radius: 0px;
@@ -1385,7 +1402,7 @@ body {}
 
 .scroll_bar {
   width: 2%;
-  height: 80px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1396,6 +1413,11 @@ body {}
   z-index: 1;
 }
 
+.scroll_bar_arrow {
+  position: absolute;
+  height: 40px;
+  margin-top: -5px;
+}
 
   /**/
 
@@ -1410,7 +1432,7 @@ body {}
   .about_apply_btn {
     position: relative;
     height: 40px;
-    width: 40%;
+    width: 175px;
     display: flex;
     margin: 20px 0 0 12%;
     background-color: #111111;
@@ -1448,7 +1470,7 @@ body {}
 .review_btn {
   position: relative;
   display: flex;
-  width: 40%;
+  width: 175px;
   height: 40px;
   border-radius: 0px;
   background-color: #111111;
@@ -1693,7 +1715,7 @@ body {}
   }
 
   .top_page_btn {
-    width: 60%;
+    width: 120px;
     font-size: 10px;
     margin-top: -23px;
   }
@@ -1707,8 +1729,21 @@ body {}
   }
 
   .scroll_bar {
+    /*
     display: none;
+    */
+    height: 75px;
+    top: 150px;
+    left: 49%;
   }
+
+  /**/
+  .scroll_bar_arrow {
+    position: absolute;
+    height: 30px;
+    margin-top: -15px;
+  }
+  /**/
 
   /* aboutのSP画面 */
   .about {
@@ -1750,7 +1785,7 @@ body {}
   }
 
   .about_apply_btn {
-    width: 35%;
+    width: 150px;
     margin: 20px 15% 0px 15%;
   }
 
@@ -1984,11 +2019,11 @@ body {}
   }
 
   .review_apply_btn {
-    width: 40%;
+    width: 150px;
   }
 
   .review_view_more_btn {
-    width: 40%;
+    width: 150px;
   }
 
   .review_explains_outer {
